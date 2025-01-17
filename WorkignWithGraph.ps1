@@ -11,8 +11,8 @@ Install-Module Microsoft.Graph -Scope AllUsers -Repository PSGallery -Force
 
 # https://learn.microsoft.com/en-us/powershell/microsoftgraph/authentication-commands?view=graph-powershell-1.0
 # Define the Application (Client) ID and Secret
-$ApplicationClientId = '<application(client)ID>' # Application (Client) ID
-$ApplicationClientSecret = '<secret.value>' # Application Secret Value
+$ApplicationClientId = 'APP ID>' # Application (Client) ID
+$ApplicationClientSecret = 'Secret Value' # Application Secret Value
 $TenantId = 'Tenant_Id' # Tenant ID
 
 # Convert the Client Secret to a Secure String
