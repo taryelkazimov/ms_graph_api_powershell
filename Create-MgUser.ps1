@@ -35,9 +35,9 @@ $password = -join ($password.ToCharArray() | Sort-Object { Get-Random })
 
 
 # Configuration
-$ClientId     = 'ba1b3b42-fe09-4596-b98a-cba2b928fb24'
-$TenantId     = 'a8599d02-67e8-4b94-bede-a26a6f14bcf0'
-$ClientSecret = 'iAl8Q~9VfoHMsqS4_dZy4t2Tvo142HQDlDScocvd'
+$ClientId     = 'ClientId'
+$TenantId     = 'TenantID'
+$ClientSecret = 'Secret'
 
 # Convert the client secret to a secure string
 $ClientSecretPass = ConvertTo-SecureString -String $ClientSecret -AsPlainText -Force
