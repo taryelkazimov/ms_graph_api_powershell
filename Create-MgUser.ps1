@@ -65,7 +65,7 @@ $userExists = Get-MgUser -Filter "userPrincipalName eq '$upn'"
 if ($userExists) {
     Write-Output "User with UPN $upn already exists."
 } else {
-    New-MgUser -DisplayName "$displayName" -PasswordProfile $PasswordProfile -AccountEnabled:$true -MailNickname $MailName -UserPrincipalName $upn -GivenName $givenname -Surname $surname -Department $department $ | Out-Null
+    New-MgUser -DisplayName "$displayName" -PasswordProfile $PasswordProfile -AccountEnabled:$true -MailNickname $MailName -UserPrincipalName $upn -GivenName $givenname -Surname $surname -Department $department | Out-Null
     
     Write-Output "User $displayName created successfully."
 
